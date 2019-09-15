@@ -2,7 +2,7 @@ A single-page, one-column resume for software developers. It uses the base latex
 
 
 ### Preview
-![Resume Screenshot](/resue_preview.png)
+![Resume Screenshot](/resume_preview.png)
 
 ### License
 Format is MIT but all the data is owned by Pawan Kumar.
