@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Pawan Kumar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Pawan Kumar}} & Email : \href{mailto:pawanwrites93@gmail.com}{pawanwrites93@gmail.com}\\
+  \href{https://www.linkedin.com/in/itspawanhere/}{Linkedin: https://www.linkedin.com/in/itspawanhere/} & Mobile : +91-911-015-5652 \\
+  \href{https://github.com/itspawanhere}{Github: https://github.com/itspawanhere} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Kanpur}{Kanpur, India}
+      {Masters in Computer Science;  GPA: 8.33/10}{July 2016 - May 2018}
+
+    \resumeSubheading
+      {Indian Institute of Technology, Guwahati}{Guwahati, India}
+      {B.tech in Computer Science and Engineering;  GPA: 7.80/10}{July 2010 - May 2014}
+  \resumeSubHeadingListEnd
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{Java, C, C\texttt{++}, Javascript, Python, SQL, Unix scripting}
+	\resumeSubItem{Tools}{Git, Latex, Docker}
+	\resumeSubItem{Technology}{Spring Boot, Hadoop, Hive, Spark, Elasticsearch, Kafka, GraphQL, Druid, React, Angular, Neo4j, Express, Electron}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+	{Goldman Sachs}{Bangalore, IN}
+	{Associate}{Jan 2021 -  Current}
+	\resumeItemListStart
+    \resumeItem{Lumos}
+      {Started working on enhancing a GS internal desktop tool called LUMOS. The objective is to bring all the open workflows/tickets/notifications for all the GS employees in one desktop app. \\ Tools/Technology used: \textsc{Angular, Electron, JavaScript}.}
+	\resumeItemListEnd
+
+    \resumeSubheading
+    {Eureka Analytics}{Bangalore, IN}
+    {Software Engineer}{June 2018 -  Jan 2021}
+    \resumeItemListStart
+        \resumeItem{Eureka Omni}{Worked on a tool called Omni which can create a dashboard through custom templates and add pre-existing or new widgets to create reports in various formats and share with the clients.  \\ Tools/Technology Used: \textsc{Cube.js, Spring Boot, React}.}
+        \resumeItem{Contact Tracing}{Trace a user using Telco Data to find potential sources of infection for Covid-19. Proper mechanism to handle user's consent. Use Point of Interests to jog the memory of the user to find potential infection sources. \\ Tools/Technology Used: \textsc{Druid, Leaflet, Spring Boot, React}.}
+        % \resumeItem{Credit Score}{Built an end-to-end system that can ingest credit score data from Eureka AI engine in Hive to Elasticsearch and clients can use mobile number or national ID to fetch the credit score of the user(s). \\ Tools/Technology Used: \textsc{Elasticsearch, Spring Boot, Bootstrap, React}.}
+        \resumeItem{Data Pipeline for Telco Dataset}
+          {Built tool named ``pipecore'' which can automate the transformation of data from any Telco to Eureka format upon which AI engines can run. Additionally, it supported transferring data from one database to other.  e.g. Hive to Elasticsearch. \\ Tools/Technology Used: \textsc{Java, Hadoop, Oozie, Spark, Hive, Python, Elasticsearch, Kibana}.}
+        % \resumeItem{Campaign Management System}
+        %   {Developed a system using which a Campaign Director can create and manage campaigns for any set of target customers. The major challenge involved matchmaking of best users to each campaign during simultaneous runs. \\ Tools/Technology Used: \textsc{Spring Boot, MySQL, React}.}
+          \resumeItem{Eureka User Profile Store}
+          {Built the User Interface and backend for exploring the Telco Users and create a specific section of users based on various filters. Developed various data visualization charts based on the dynamic filters selected.  Additionally, the segment of users created can be used as base users for creating dynamic dashboards. \\ Tools/Technology Used: \textsc{React, Elasticsearch, Spring Boot, Bootstrap, Chart-js}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+		{Samsung Research Institute}{Bangalore, IN}
+		{Software Engineer}{June 2014 -  July 2016}
+		\resumeItemListStart
+        \resumeItem{Splitbilling}
+          {Developed separate billing system using which system admin can monitor call/SMS/data usage for personal and enterprise usage separately through a dashboard. \\ Tools/Technology used: \textsc{Python, MongoDB, Flask, JavaScript, Bootstrap}.}
+        \resumeItem{Email Glue}
+          {Worked on automation of tasks/events creation based on email content and hence enabling zero-inbox policy for Samsung email app. Additionally, developed a Google Drive add-on for Samsung Email using which mail attachments can be directly integrated with Google drive. \\ Tools/Technology Used: \textsc{Android, Java, Google Drive SDK}.}
+		\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+% \section{Academic Projects}
+% \resumeSubHeadingListStart
+% \resumeSubItem{Knowledge Management System}{Developed a fully voice-automated web-application based on Watson APIs which can be trained and queried later. Optionally, the user can provide feedback to the system, which can be used to enhance the results. Technology/Tools Used: \textsc{Python, Watson SDK, Flask}. (Mar '18)}
+% \resumeSubItem{IIT Kanpur CSE Lab Management}{}
+% \begin{description}[font=$\bullet$]
+%     \item {Created Moodle course management system for CSE department, IIT Kanpur. Tool Used: \textsc{Moodle/PHP}. (Sep '16)}
+%     \item {Created and setup the LDAP authentication for CSE department users. Tool Used: \textsc{LDAP/PHP}. (Mar '17)}
+%     \end{description}
+% \resumeSubItem{Breaking Ciphers - Cryptology}{}
+% \begin{description}[font=$\bullet$]
+%     \item {Broke 6-round of DES (Data Encryption Standard) by using chosen-plain text attack. Tool Used: C\texttt{++}. (Feb '17)}
+%     \item {Broke a special case of RSA (where public key is small) for 1024-digit long prime factors. Tool Used: \textsc{SAGE}. (Mar '17)}
+%     \end{description}
+% \resumeSubItem{Information Retrieval System}{Developed a text based retrieval system(Mini Search System) for CACM dataset. Preprocessing and Indexing the documents using Trie Tree and TF-IDF as relevance score. Technology/Tools Used: \textsc{Python, JavaScript}. (Sep '13)}
+% \resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+% \section{Honors and Awards}
+% \begin{description}[font=$\bullet$]
+% \item {Awarded Merit-cum-means Scholarship at IIT Guwahati for 4 straight years. (2010 - 14)}
+% \item {Listed among the top 0.18 \% among 500K\texttt{+} students appearing at JEE. (May '10)}
+% \item {Awarded Certificate of Merit by CBSE for being among top 0.1\% of students in Social Science. (May '08)}
+% \item {Got first prize in state level essay competition. (May '07)}
+% \end{description}
+%-------------------------------------------
+
+%-----------Courses-----------------
+\section{Relevant Courses}
+Data Structures and Algorithms, Computer Networks, Discrete Mathematics, System Programming, Operating Systems, Cryptology, Computational Complexity, Information Retrieval, Compilers, Databases, UX-Design, Machine Learning.
+%-------------------------------------------
+\end{document}
